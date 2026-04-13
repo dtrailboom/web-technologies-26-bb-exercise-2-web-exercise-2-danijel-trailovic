@@ -1,41 +1,103 @@
 @import url(base.css);
 
-h1 {
-  font-size: 200%;
-  margin: 8px 0px;
-}
-
-img {
-  border-radius: 12px;
+/* DARK MODE */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #111827;
+  color: #f3f4f6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 article {
-  background-color: lightgray;
-  border-radius: 16px;
-  padding: 16px;
-  margin: 2vw;
+  background-color: #1f2937;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
 }
 
-span {
-  margin-right: 4px;
+img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
 }
 
+h1 {
+  color: #f3f4f6;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #e5e7eb;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.movie-info {
+  margin: 10px 0;
+  color: #9ca3af;
+}
+
+/* GENRES */
 .genre {
-  padding: 4px 8px;
-  border: solid black 1px;
-  border-radius: 6px;
-  background-color: darkgray;
+  display: inline-block;
+  background-color: #374151;
+  color: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* RATINGS */
+.rating {
   font-weight: bold;
 }
 
-input {
-  width: 100%;
+.rating-high {
+  color: #22c55e;
 }
 
-select {
-  width: 100%;
+.rating-medium {
+  color: #f59e0b;
 }
 
-textarea {
-  width: 100%;
+.rating-low {
+  color: #ef4444;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  background-color: #4338ca;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #312e81;
 }
