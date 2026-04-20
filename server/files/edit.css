@@ -1,11 +1,66 @@
 @import url(base.css);
 
+/* Grundlayout (Dark Mode wie auf index) */
+body {
+  background-color: #111827;
+  color: #f3f4f6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Formular-Karte */
+form {
+  background-color: #1f2937;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Abstände der Felder */
+div {
+  margin: 10px 0;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #e5e7eb;
+}
+
+/* Inputs, Select, Textarea */
 input,
 select,
 textarea {
   width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background-color: #111827;
+  color: #f3f4f6;
 }
 
-div {
-  margin: 4px 0px;
+/* Multi-Select etwas größer */
+select[multiple] {
+  height: 120px;
+}
+
+/* Buttons */
+button {
+  margin-top: 10px;
+  background-color: #4338ca;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #312e81;
 }
